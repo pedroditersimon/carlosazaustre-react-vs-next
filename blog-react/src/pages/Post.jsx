@@ -18,7 +18,7 @@ export default function Post() {
         const postData = await postResponse.json();
 
         const userResponse = await fetch(
-          `https://jsonplaceholder.typicode.com/users/${post.userId}`
+          `https://jsonplaceholder.typicode.com/users/${postData.userId}`
         );
         const userData = await userResponse.json();
 
